@@ -5,9 +5,9 @@
 <template>
   <div>
     <header class="bg-blue">
-      <h1 class="py-2 m-0 text-white text-center text-4xl font-black">Planificador de Gastos
+      <h1 class="py-5 m-0 text-white text-center text-4xl font-black">Planificador de Gastos
       </h1>
-      <div class="w-[90%] max-w-3xl mx-auto -mt-[50px] translate-y-[50px] p-[50px] shadow-2xl bg-white">
+      <div class="w-[90%] max-w-3xl mx-auto -mt-[50px] translate-y-[50px] p-[50px] shadow-2xl bg-white rounded-xl">
         
         <Presupuesto 
         />
