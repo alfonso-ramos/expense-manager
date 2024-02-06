@@ -9,7 +9,7 @@ export default {
       'white': '#fff',
       'gray': '#f5f5f5',
       'dark-gray': '#64748b',
-      'black': '#000'
+      'black': '#000',
     }
   },
   plugins: [],
