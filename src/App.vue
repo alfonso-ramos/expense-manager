@@ -23,25 +23,25 @@
     modal.mostrar = true
     setTimeout(() => {
       modal.animar = true
-    }, 3000)
+    }, 300)
   }
 
   const ocultarModal = () => {
     console.log('Se desactivo el modal')
-    modal.mostrar = false
-    setTimeout(() => {
     modal.animar = false
-  }, 3000)
+    setTimeout(() => {
+      modal.mostrar = false
+  }, 300)
   }
 </script>
 
 <template>
   <div>
     <header class="bg-blue">
-      <h1 class="py-5 m-0 text-white text-center text-4xl font-black">Planificador de Gastos
+      <h1 class="py-5 m-0 text-white text-center text-4xl font-black">
+        Planificador de Gastos
       </h1>
       <div class="w-[90%] max-w-3xl mx-auto -mt-[50px] translate-y-[50px] p-[50px] shadow-2xl bg-white rounded-xl">
-        
         <Presupuesto 
         v-if="presupuesto === 0"
           @definir-presupuesto='definirPresupuesto'

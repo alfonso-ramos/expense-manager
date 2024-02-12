@@ -1,7 +1,18 @@
 <script setup>
+    import {computed} from 'vue' 
     import cerrarModal from '../assets/img/cerrar.svg'
 
     const emit = defineEmits(['ocultar-modal'])
+    const props = defineProps({
+        modal: {
+            type: Object,
+            required: true
+        }
+    })
+
+    const animar = computed(() => {
+        return props.modal.animar === false
+    })
 </script>
 
 <template>
@@ -11,8 +22,11 @@
             alt="cerrar modal" 
             @click="$emit('ocultar-modal')">
         </div>
-
-        <div class="w-[90%] min-w-48 mt-24 my-0 mx-auto bg-blue  rounded-2xl p-8">
+        <!-- Contenedor del formulario -->
+        <div 
+            :class="[animar ? 'opacity-0' : 'opacity-1']" 
+            class="w-[90%] min-w-48 mt-24 my-0 mx-auto bg-blue rounded-2xl p-8 transition-all duration-300 ease-in "
+            >
             <form class="grid gap-5">
                 <legend class="text-white text-center text-2xl font-semibold">Agregar gasto</legend>
                 <div class="campo">

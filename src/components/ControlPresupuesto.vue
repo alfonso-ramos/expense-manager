@@ -20,7 +20,7 @@
         </div>
         <div class="w-full
         ">
-            <button class="mb-8 md:mb-4 bg-[#db2777] border-none p-2 w-full text-white font-black hover:pointer hover:bg-[#c11d67] transition ease-in-out delay-30 uppercase rounded-lg">Reset</button>
+            <button class="mt-8 mb-8 md:mb-4 bg-[#db2777] border-none p-2 w-full text-white font-black hover:pointer hover:bg-[#c11d67] transition ease-in-out delay-30 uppercase rounded-lg">Reset</button>
             <div class="text-2xl text-center md:text-left text-dark-gray">
                 <p><span class="font-black text-blue">Presupuesto:</span>{{ formatearCantidad(presupuesto)  }}</p>
                 <p><span class="font-black text-blue">Disponible:</span>{{ formatearCantidad(disponible)  }}</p>
